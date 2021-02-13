@@ -10,8 +10,6 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -42,7 +40,7 @@ h2 {
 .mobileContainer {
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 15px;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -56,6 +54,7 @@ h2 {
   .container,
   .mobileContainer {
     max-width: 768px;
+    display: flex;
   }
 }
 
@@ -63,6 +62,7 @@ h2 {
   .container,
   .mobileContainer {
     max-width: 1200px;
+    display: flex;
   }
 }
 
@@ -100,7 +100,8 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .logo {
-    margin-right: 88px;
+    margin: 26px 0;
+    margin-right: 84px;
   }
 }
 
@@ -119,6 +120,7 @@ h2 {
 }
 
 .mobileButton {
+  margin-top: 10px;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -152,7 +154,7 @@ h2 {
   position: absolute;
   right: 0;
   top: 0;
-  margin: 10px 15px;
+  margin-right: 15px;
 }
 
 .formMenu {
@@ -227,5 +229,84 @@ h2 {
 
 .socialNetwork a {
   color: #2196f3;
+}
+
+.menu {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.menu .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 82px;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu .navigation {
+    margin-right: 305px;
+  }
+}
+
+.navigation li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation a {
+  color: #212121;
+  font-size: 14px;
+  line-height: 1.142;
+}
+
+.marginContacts {
+  padding: 21px 0;
+}
+
+.marginContacts li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .marginContacts li:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+.marginContacts a {
+  color: #757575;
+  fill: #757575;
+  font-size: 12px;
+  line-height: 1.166;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .marginContacts a {
+    font-size: 14px;
+    line-height: 1.142;
+  }
+}
+
+.marginContacts .iconHeader {
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .marginContacts .iconHeader {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .marginContacts {
+    display: flex;
+    padding: 32px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
