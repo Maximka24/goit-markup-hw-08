@@ -18,11 +18,69 @@
 <body>
 	<!-- ШАПКА САЙТА-->
 	<header class="header">
+		<div class="mobileContainer">
+			<a href="#" class="logo">
+				Web<span class="logoBlack">Studio</span>
+			</a>
+			<button class="mobileButton" data-modal-openMenu type="button">
+				<svg class="" width="24px" height="16px">
+					<use href="./img/open-close.svg#icon-open"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="backdropMenu is-hidden" data-modal-menu>
+			<div class="modalMenu">
+				<form action="#" class="form">
+					<nav class="menu">
+						<ul class="navigation">
+							<li>
+								<a class="link current" href="#">Студия</a>
+							</li>
+							<li>
+								<a class="link" href="./pages/portfolio.html">Портфолио</a>
+							</li>
+							<li>
+								<a class="link" href="">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="marginContacts">
+						<li>
+							<a class="contacts" href="mailto:info@devstudio.com">
+								<svg class="iconHeader" width="16px" height="12px">
+									<use href="./img/symbol-defs.svg#icon-mailto"></use>
+								</svg>
+								info@devstudio.com
+							</a>
+						</li>
+						<li>
+							<a class="contacts" href="tel:+380961111111">
+								<svg class="iconHeader" width="10px" height="16px">
+									<use href="./img/symbol-defs.svg#icon-phone"></use>
+								</svg>
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+					</ul>
+				</form>
+				<button class="mobileButton" data-modal-closeMenu type="button">
+					<svg class="" width="18px" height="18px">
+						<use href="./img/open-close.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
 		<div class="container">
+			<a href="#" class="logo">
+				Web<span class="logoBlack">Studio</span>
+			</a>
 			<nav class="menu">
-				<a href="#" class="logo">
-					Web<span class="logoBlack">Studio</span>
-				</a>
 				<ul class="navigation">
 					<li>
 						<a class="link current" href="#">Студия</a>
@@ -57,7 +115,7 @@
 	</header>
 	<!-- /ШАПКА САЙТА-->
 	<!-- БЛОК ГЕРОЙ -->
-	<section class="hero">
+	<!-- <section class="hero">
 		<div class="container">
 			<h1 class="main-header">Эффективные решения для вашего бизнеса</h1>
 			<button class="button" data-modal-open type="button">
@@ -115,10 +173,10 @@
 				</button>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- / БЛОК ГЕРОЙ -->
 	<!-- НАШИ ДОСТОИНСТВА-->
-	<section class="dignity">
+	<!-- <section class="dignity">
 		<div class="container">
 			<h2 class="advantageTitle">Наши достоинства</h2>
 			<ul>
@@ -172,10 +230,10 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
 	<!-- /НАШИ ДОСТОИНСТВА-->
 	<!--Что мы делаем-->
-	<section class="worksList">
+	<!-- <section class="worksList">
 		<div class="container">
 			<h2 class="secondHeader">Чем мы занимаемся</h2>
 			<ul>
@@ -194,10 +252,10 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
 	<!-- /Что мы делаем-->
 	<!-- Наша команда-->
-	<section class="teams">
+	<!-- <section class="teams">
 		<div class="container">
 			<h2 class="secondHeader">Наша команда</h2>
 			<ul>
@@ -351,10 +409,10 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
 	<!-- /Наша команда-->
 	<!-- Постоянные клиенты -->
-	<section class="clients">
+	<!-- <section class="clients">
 		<div class="container">
 			<h2 class="secondHeader">Постоянные клиенты</h2>
 			<ul class="iconClients">
@@ -402,10 +460,10 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
 	<!-- /Постоянные клиенты -->
 	<!-- Футер-->
-	<footer class="footerBg">
+	<!-- <footer class="footerBg">
 		<div class="containerFooter">
 			<div class="footerInfo">
 				<a class="logo" href="#">
@@ -473,8 +531,9 @@
 				</form>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 	<!-- /Футер-->
+	<script src="./js/menuMobile.js"></script>
 	<script src="./js/modal.js"></script>
 </body>
 

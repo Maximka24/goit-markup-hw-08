@@ -1,0 +1,48 @@
+.mobileButton {
+	width: 40px;
+	height: 40px;
+	margin: 10px 0;
+	padding: 0;
+	border: 0;
+	background: #fff;
+	fill: #000;
+}
+.backdropMenu {
+	// background: $bgModal;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.backdropMenu.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+.modalMenu {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 480px;
+	height: 796px;
+	padding: 48px 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background: $bgModal;
+}
+.mobileModal {
+	.modalMenu & {
+		// position: absolute;
+		padding: 0;
+		top: 0;
+		right: 0;
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		margin-right: 8px;
+		margin-top: 8px;
+		background: var(--bg-modal);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

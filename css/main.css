@@ -1,0 +1,169 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+h2 {
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.container,
+.mobileContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container,
+  .mobileContainer {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container,
+  .mobileContainer {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container,
+  .mobileContainer {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .container {
+    display: none;
+  }
+}
+
+.mobileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .mobileContainer {
+    display: none;
+  }
+}
+
+.header {
+  border-bottom: 5px solid red;
+}
+
+.logo {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
+
+.logoBlack {
+  color: #000000;
+}
+
+.logo-color-white {
+  color: #ffffff;
+}
+
+.mobileButton {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+  padding: 0;
+  border: 0;
+  background: #fff;
+  fill: #000;
+}
+
+.backdropMenu {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.backdropMenu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modalMenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 480px;
+  height: 796px;
+  padding: 48px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+}
+
+.modalMenu .mobileModal {
+  padding: 0;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 8px;
+  margin-top: 8px;
+  background: var(--bg-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

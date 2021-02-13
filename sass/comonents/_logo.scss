@@ -1,0 +1,22 @@
+.logo {
+	display: inline-block;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
+	color: $mainLogoColor;
+
+	@media screen and (min-width: 768px) {
+		margin-right: 88px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-right: 93px;
+	}
+}
+.logoBlack {
+	color: $logoColorBlack;
+}
+.logo-color-white {
+	color: $logoColorWhite;
+}
