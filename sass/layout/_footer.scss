@@ -1,0 +1,125 @@
+.footerBg {
+	background-color: $bgFooter;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	.containerFooter {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 15px;
+
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		@media screen and (min-width: 1200px) {
+			display: flex;
+			text-align: start;
+		}
+	}
+}
+
+.footerInfo {
+	.logo {
+		margin-bottom: 20px;
+
+		@media screen and (min-width: 768px) {
+			margin-right: auto;
+			margin-left: auto;
+		}
+		@media screen and (min-width: 1200px) {
+			margin: 0;
+			margin-bottom: 20px;
+			justify-content: flex-start;
+		}
+	}
+	.address {
+		font-weight: normal;
+		font-style: normal;
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		color: $colorAddress;
+		margin-bottom: 8px;
+	}
+}
+.marginMailto {
+	margin-bottom: 8px;
+
+	.contactsFooter {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		color: $colorTextParagraph;
+		margin: 0;
+
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			color: var(--color-tartet);
+		}
+	}
+}
+.footerIcon {
+	margin: 60px 0;
+
+	@media screen and (min-width: 768px) {
+		margin: 0;
+		margin-left: 165px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin: 0;
+		margin-left: 70px;
+	}
+	.connect {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		color: $colorTextH2;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.iconTeam {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.elementIcon {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.colorIconFt {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		fill: #ffffff;
+
+		transition-property: fill, background, border-radius;
+		transition-duration: 250ms, 250ms, 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+			cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			fill: #ffffff;
+			border-radius: 50%;
+			background: $colorTartet;
+		}
+	}
+}
