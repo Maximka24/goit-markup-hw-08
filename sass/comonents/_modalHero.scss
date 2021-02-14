@@ -1,0 +1,258 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.2);
+
+	&.is-hidden {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: $bgModal;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	width: 450px;
+
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+	}
+}
+
+.buttonModal {
+	position: absolute;
+	padding: 0;
+	top: 0;
+	right: 0;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-right: 8px;
+	margin-top: 8px;
+	background: $bgModal;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+
+.form {
+	padding: 40px;
+	& h1 {
+		margin: 0;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: #212121;
+	}
+	.submit {
+		margin-top: 30px;
+		min-width: 200px;
+		padding: 10px 32px;
+		font-family: $mainFontFamil;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.87;
+		color: $textButtonHover;
+		background: $bgButton;
+		border-radius: 4px;
+		border: 0;
+		cursor: pointer;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.formBar {
+	position: relative;
+	margin-top: 30px;
+	display: block;
+
+	.formInput {
+		padding: 11px;
+		padding-left: 35px;
+		width: 100%;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		border-radius: 4px;
+		transition-property: border, outline;
+		transition-duration: 250ms, 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+			cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:focus {
+			border: 1px solid $focusFormColor;
+			outline: 0;
+		}
+	}
+	.svgModal {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+		transform: translateY(-50%);
+
+		transition-property: fill;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.formText {
+		position: absolute;
+		top: 50%;
+		left: 35px;
+		transform: translateY(-50%);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 1.17;
+		letter-spacing: 0.01em;
+		color: $mainFormcolorText;
+
+		transition-property: transform, left;
+		transition-duration: 250ms, 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+			cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+
+.formInput:focus + .svgModal {
+	fill: $focusFormColor;
+}
+
+.formInput:focus ~ .formText,
+.formInput:not(:placeholder-shown) ~ .formText {
+	transform: translateY(-40px);
+	left: 0;
+}
+
+.formBarTextarea {
+	position: relative;
+	display: block;
+	margin: 0;
+	margin-top: 30px;
+
+	.formTextarea {
+		margin: 0;
+		padding: 11px;
+		padding-left: 16px;
+		width: 100%;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		border-radius: 4px;
+		resize: none;
+		transition-property: border, outline;
+		transition-duration: 250ms, 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+			cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:focus {
+			border: 1px solid $focusFormColor;
+			outline: 0;
+		}
+	}
+	.textTextarea {
+		position: absolute;
+		left: 16px;
+		top: 12px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 1.17;
+		letter-spacing: 0.01em;
+		color: $mainFormcolorText;
+
+		transition-property: transform, left;
+		transition-duration: 250ms, 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+			cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+
+.formTextarea:focus + .textTextarea,
+.formTextarea:not(:placeholder-shown) + .textTextarea {
+	transform: translateY(-35px);
+	left: 0;
+}
+
+.formCheckbox {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+
+	.checkbox {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+
+	.iconCheck {
+		margin-right: 8px;
+		width: 16px;
+		height: 15px;
+		border: 2px solid #212121;
+		border-radius: 2px;
+		transition-property: outline, border-radius;
+		transition-duration: 250ms, 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+			cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.textCheckbox {
+		// text-align: center;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 1.166;
+		letter-spacing: 0.03em;
+		color: $mainFormcolorText;
+		transition-property: cursor;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		@media screen and (min-width: 1200px) {
+			font-size: 14px;
+			line-height: 1.71;
+		}
+		& a {
+			text-decoration-line: underline;
+			color: $focusFormColor;
+		}
+	}
+}
+.checkbox:checked + .iconCheck {
+	background-color: $focusFormColor;
+	background-image: url(../img/check-ok.svg);
+	background-size: contain;
+	background-origin: border-box;
+	border: 0;
+}
+.checkbox:hover ~ .textCheckbox {
+	cursor: pointer;
+}
+.checkbox:focus ~ .iconCheck {
+	border-radius: 2px;
+	border: 2px solid $focusFormColor;
+}
+
+/* /МОДАЛЬНОЕ ОКНО */

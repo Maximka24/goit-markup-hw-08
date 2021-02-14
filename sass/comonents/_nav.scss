@@ -17,6 +17,9 @@
 	}
 }
 .navigation {
+	& li {
+		position: relative;
+	}
 	& li:not(:last-child) {
 		margin-right: 50px;
 	}
@@ -25,6 +28,61 @@
 		font-size: 14px;
 		line-height: 1.142;
 	}
+	.link {
+		font-weight: 500;
+		color: $mainTextColor;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		display: block;
+
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover,
+		&:focus {
+			color: $colorTartet;
+		}
+		&::after {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			content: "";
+			opacity: 0;
+			height: 4px;
+			width: 100%;
+			border-radius: 2px;
+			background-color: $colorTartet;
+			display: block;
+			bottom: -1px;
+
+			transition-property: opacity;
+			transition-duration: 500ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
+	.current {
+		color: $colorTartet;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			content: "";
+			opacity: 1;
+			display: block;
+			height: 4px;
+			width: 100%;
+			background-color: $focusFormColor;
+			border-radius: 2px;
+			bottom: -1px;
+		}
+	}
+}
+
+.link:hover::after,
+.link:focus::after,
+.link:active::after {
+	opacity: 1;
 }
 .marginContacts {
 	padding: 21px 0;

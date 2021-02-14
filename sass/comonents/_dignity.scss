@@ -1,0 +1,88 @@
+.dignity {
+	@media screen and (min-width: 480px) {
+		margin-top: 60px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-top: 94;
+	}
+}
+.container {
+	// .dignity & {
+	// 	@media screen and (min-width: 768px) {
+	// 		& ul {
+	// 			margin: -30px;
+	// 			display: flex;
+	// 			flex-wrap: wrap;
+	// 			justify-content: space-between;
+	// 		}
+	// 	}
+	// }
+	.advantageTitle {
+		margin: 0;
+		display: none;
+	}
+}
+ul {
+	.dignity & {
+		@media screen and (min-width: 768px) {
+			margin: -15px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+}
+
+.dignityList {
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		width: 100%;
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 354px;
+		margin: 15px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 270px;
+		margin-bottom: 0px;
+	}
+
+	.iconDignity {
+		height: 120px;
+		margin-bottom: 30px;
+		background: $colorBgTeamIcon;
+		border-radius: 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.advantage {
+		text-transform: uppercase;
+		margin: 0;
+		margin-bottom: 10px;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		color: $mainTextColor;
+
+		@media screen and (max-width: 767px) {
+			text-align: center;
+		}
+	}
+	.advantageParagraph {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		color: $colorTextParagraph;
+		margin: 0;
+	}
+}
