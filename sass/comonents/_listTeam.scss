@@ -1,0 +1,117 @@
+.teams {
+	background: $colorBgTeamIcon;
+	padding-bottom: 94px;
+	padding-top: 94px;
+
+	.secondHeader {
+		text-align: center;
+		font-weight: bold;
+		letter-spacing: 0.03em;
+		color: $mainTextColor;
+		margin-bottom: 30px;
+		font-size: 28px;
+		line-height: 1.178;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 50px;
+			font-size: 36px;
+			line-height: 1.166;
+		}
+	}
+}
+.container {
+	.teams & {
+		display: block;
+	}
+
+	.teamsList {
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-wrap: wrap;
+			margin: -15px;
+		}
+
+		@media screen and (min-width: 1200px) {
+		}
+	}
+}
+.worker {
+	width: 100%;
+	background: #ffffff;
+	border-radius: 0px 0px 4px 4px;
+	text-align: center;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	margin-bottom: 30px;
+
+	@media screen and (min-width: 768px) {
+		width: 354px;
+		margin: 15px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 270px;
+		margin: 15px;
+	}
+}
+
+.person {
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+	padding-bottom: 24px;
+
+	.ourTeam {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.19;
+		letter-spacing: 0.03em;
+		color: $mainTextColor;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.profession {
+		font-size: 16px;
+		line-height: 1.19;
+		letter-spacing: 0.03em;
+		color: $colorTextParagraph;
+		margin: 0;
+		margin-bottom: 16px;
+	}
+
+	.iconTeam {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.iconTeam {
+	li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		width: 44px;
+	}
+	.colorIcon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 44px;
+		height: 44px;
+		fill: $colorIcon;
+
+		transition-property: fill, background, border-radius;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			fill: #ffffff;
+			border-radius: 50%;
+			background: var(--color-tartet);
+		}
+	}
+}

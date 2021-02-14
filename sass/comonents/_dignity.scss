@@ -1,6 +1,7 @@
 .dignity {
 	@media screen and (min-width: 480px) {
 		margin-top: 60px;
+		margin-bottom: 60px;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -8,16 +9,6 @@
 	}
 }
 .container {
-	// .dignity & {
-	// 	@media screen and (min-width: 768px) {
-	// 		& ul {
-	// 			margin: -30px;
-	// 			display: flex;
-	// 			flex-wrap: wrap;
-	// 			justify-content: space-between;
-	// 		}
-	// 	}
-	// }
 	.advantageTitle {
 		margin: 0;
 		display: none;
