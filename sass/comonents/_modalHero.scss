@@ -1,16 +1,15 @@
 .backdrop {
 	@media screen and (max-width: 479px) {
 		position: fixed;
-		height: 100%;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		padding: 90px 15px;
-		width: 100%;
 		z-index: 999;
-		overflow-y: scroll;
 		background: rgba(0, 0, 0, 0.2);
+		overflow-y: scroll;
+		opacity: 1;
 	}
 	// @media screen and (min-width: 480px) {
 	// 	position: fixed;
@@ -81,7 +80,9 @@
 /* МОДАЛЬНОЕ ОКНО */
 
 .form {
+	display: block;
 	padding: 40px;
+
 	& h1 {
 		margin: 0;
 		font-family: Roboto;
