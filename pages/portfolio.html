@@ -18,11 +18,63 @@
 <body>
 	<!-- ШАПКА САЙТА-->
 	<header class="header">
+		<div class="mobileContainer">
+			<a href="#" class="logo">
+				Web<span class="logoBlack">Studio</span>
+			</a>
+			<button class="mobileButton" data-modal-openMenu type="button">
+				<svg class="" width="24px" height="16px">
+					<use href="./img/open-close.svg#icon-open"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="backdropMenu is-hidden" data-modal-menu>
+			<div class="modalMenu">
+				<form action="#" class="formMenu">
+					<nav class="">
+						<ul class="mobileNavigation">
+							<li>
+								<a class="link" href="../index.html">Студия</a>
+							</li>
+							<li>
+								<a class="link current" href="#">Портфолио</a>
+							</li>
+							<li>
+								<a class="link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="mobileContacts">
+						<li>
+							<a class="phone" href="tel:+380961111111">
+								+38 096 111 11 11
+							</a>
+						</li>
+						<li>
+							<a class="mailto" href="mailto:info@devstudio.com">
+								info@devstudio.com
+							</a>
+						</li>
+					</ul>
+					<ul class="socialNetwork">
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">LinkedIn</a></li>
+					</ul>
+				</form>
+				<button class="mobileButton" data-modal-closeMenu type="button">
+					<svg class="" width="18px" height="18px">
+						<use href="./img/open-close.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
 		<div class="container">
+			<a href="#" class="logo">
+				Web<span class="logoBlack">Studio</span>
+			</a>
 			<nav class="menu">
-				<a href="#" class="logo">
-					Web<span class="logoBlack">Studio</span>
-				</a>
 				<ul class="navigation">
 					<li>
 						<a class="link" href="../index.html">Студия</a>
@@ -31,28 +83,28 @@
 						<a class="link current" href="#">Портфолио</a>
 					</li>
 					<li>
-						<a class="link" href="">Контакты</a>
+						<a class="link" href="№">Контакты</a>
+					</li>
+				</ul>
+				<ul class="marginContacts">
+					<li>
+						<a class="contacts" href="mailto:info@devstudio.com">
+							<svg class="iconHeader" width="16px" height="12px">
+								<use href="./img/symbol-defs.svg#icon-mailto"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li>
+						<a class="contacts" href="tel:+380961111111">
+							<svg class="iconHeader" width="10px" height="16px">
+								<use href="./img/symbol-defs.svg#icon-phone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
 					</li>
 				</ul>
 			</nav>
-			<ul class="marginContacts">
-				<li>
-					<a class="contacts" href="mailto:info@devstudio.com">
-						<svg class="iconHeader" width="16px" height="12px">
-							<use href="../img/symbol-defs.svg#icon-mailto"></use>
-						</svg>
-						info@devstudio.com
-					</a>
-				</li>
-				<li>
-					<a class="contacts" href="tel:+380961111111">
-						<svg class="iconHeader" width="10px" height="16px">
-							<use href="../img/symbol-defs.svg#icon-phone"></use>
-						</svg>
-						+38 096 111 11 11
-					</a>
-				</li>
-			</ul>
 		</div>
 	</header>
 	<!-- /ШАПКА САЙТА-->
@@ -236,40 +288,40 @@
 			<div class="footerIcon">
 				<h2 class="connect">ПРИСОЕДИНЯЙТЕСЬ</h2>
 				<ul class="iconTeam">
-					<li>
+					<li class="elementIcon">
 						<a class="colorIconFt" href="">
 							<svg width="20px" height="20px">
-								<use href="../img/symbol-defs.svg#icon-instagram"></use>
+								<use href="./img/symbol-defs.svg#icon-instagram"></use>
 							</svg>
 						</a>
 					</li>
-					<li>
+					<li class="elementIcon">
 						<a class="colorIconFt" href="">
 							<svg width="20px" height="20px">
-								<use href="../img/symbol-defs.svg#icon-twitter"></use>
+								<use href="./img/symbol-defs.svg#icon-twitter"></use>
 							</svg>
 						</a>
 					</li>
-					<li>
+					<li class="elementIcon">
 						<a class="colorIconFt" href="">
 							<svg width="20px" height="20px">
-								<use href="../img/symbol-defs.svg#icon-facebook"></use>
+								<use href="./img/symbol-defs.svg#icon-facebook"></use>
 							</svg>
 						</a>
 					</li>
-					<li>
+					<li class="elementIcon">
 						<a class="colorIconFt" href="">
 							<svg width="20px" height="20px">
-								<use href="../img/symbol-defs.svg#icon-linkedin"></use>
+								<use href="./img/symbol-defs.svg#icon-linkedin"></use>
 							</svg>
 						</a>
 					</li>
 				</ul>
 			</div>
-			<div>
+			<div class="mailing">
 				<h2 class="connect">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
 				<form action="#" class="footerForm">
-					<label class="footer-lable">
+					<label>
 						<input class="footerInput" type="email" name="mailto" placeholder="E-mail" />
 					</label>
 					<button class="footerFormButton" type="submit">
@@ -283,7 +335,7 @@
 		</div>
 	</footer>
 	<!-- /Футер-->
-
+	<script src="../js/menuMobile.js"></script>
 </body>
 
 </html>

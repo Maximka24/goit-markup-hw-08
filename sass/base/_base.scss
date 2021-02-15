@@ -10,7 +10,12 @@ html {
 body {
 	font-family: $mainFontFamil;
 	letter-spacing: 0.02em;
+
+	&.modal-open {
+		overflow: hidden;
+	}
 }
+
 ul {
 	margin: 0;
 	padding: 0;

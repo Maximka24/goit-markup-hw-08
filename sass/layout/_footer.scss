@@ -5,8 +5,7 @@
 
 	.containerFooter {
 		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto;
 		padding: 0 15px;
 
 		@media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -17,6 +16,8 @@
 
 		@media screen and (min-width: 1200px) {
 			display: flex;
+			align-items: center;
+			justify-content: center;
 			text-align: start;
 		}
 	}
@@ -63,7 +64,7 @@
 
 		&:hover,
 		&:focus {
-			color: var(--color-tartet);
+			color: $colorTartet;
 		}
 	}
 }

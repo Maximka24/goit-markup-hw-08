@@ -84,8 +84,14 @@
 .link:active::after {
 	opacity: 1;
 }
+
 .marginContacts {
 	padding: 21px 0;
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		padding: 32px 0;
+	}
 
 	& li:not(:last-child) {
 		margin-bottom: 10px;
@@ -102,6 +108,17 @@
 		font-size: 12px;
 		line-height: 1.166;
 
+		transition-property: color, fill;
+		transition-duration: 250ms, 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+			cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			color: $colorTartet;
+			fill: $colorTartet;
+		}
+
 		display: flex;
 		align-items: center;
 
@@ -117,10 +134,5 @@
 		@media screen and (min-width: 1200px) {
 			margin-right: 10px;
 		}
-	}
-
-	@media screen and (min-width: 1200px) {
-		display: flex;
-		padding: 32px 0;
 	}
 }
