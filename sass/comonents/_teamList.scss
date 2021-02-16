@@ -116,7 +116,7 @@
 		&:focus {
 			fill: #ffffff;
 			border-radius: 50%;
-			background: var(--color-tartet);
+			background: $colorTartet;
 		}
 	}
 }

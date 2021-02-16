@@ -420,7 +420,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    width: 100%;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -431,7 +431,6 @@ h2 {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1200px;
     height: 600px;
   }
 }
@@ -507,12 +506,13 @@ h2 {
 .modal {
   position: relative;
   background: #ffffff;
-  width: 450px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .modal {
     margin: 0 auto;
+    width: 450px;
   }
 }
 
@@ -1021,7 +1021,7 @@ h2 {
 .iconTeam .colorIcon:hover, .iconTeam .colorIcon:focus {
   fill: #ffffff;
   border-radius: 50%;
-  background: var(--color-tartet);
+  background: #2196f3;
 }
 
 .clients {
@@ -1235,7 +1235,6 @@ h2 {
   align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   fill: #ffffff;
   transition-property: fill, background, border-radius;
   transition-duration: 250ms, 250ms, 250ms;
@@ -1244,8 +1243,8 @@ h2 {
 
 .elementIcon .colorIconFt:hover, .elementIcon .colorIconFt:focus {
   fill: #ffffff;
-  border-radius: 50%;
   background: #2196f3;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

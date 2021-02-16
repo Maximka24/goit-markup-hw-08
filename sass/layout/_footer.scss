@@ -108,7 +108,6 @@
 		align-items: center;
 		width: 44px;
 		height: 44px;
-		border-radius: 50%;
 		fill: #ffffff;
 
 		transition-property: fill, background, border-radius;
@@ -119,8 +118,8 @@
 		&:hover,
 		&:focus {
 			fill: #ffffff;
-			border-radius: 50%;
 			background: $colorTartet;
+			border-radius: 50%;
 		}
 	}
 }
