@@ -2,34 +2,42 @@
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
-	background: #2f303a;
 	border: 0px;
 
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url("../../img/Img-teams.jpg");
+	background-size: contain;
+
 	@media screen and (max-width: 767px) {
-		width: 100%;
-		height: 400px;
+		// width: 100%;
+		// height: 400px;
 		padding-top: 118px;
 		padding-bottom: 118px;
 	}
 
 	@media screen and (min-width: 768px) {
-		// width: 768px;
-		width: 100%;
-		height: 400px;
+		// width: 100%;
+		// height: 400px;
 		padding-top: 118px;
 		padding-bottom: 118px;
 	}
 
 	@media screen and (min-width: 1200px) {
+		// height: 600px;
 		padding-top: 200px;
 		padding-bottom: 200px;
-		// min-width: 1600px;
-		height: 600px;
-		// background-image: linear-gradient(
-		// 		rgba(47, 48, 58, 0.4),
-		// 		rgba(47, 48, 58, 0.4)
-		// 	),
-		// 	url("../img/Img-teams.jpg");
+	}
+}
+@media screen and (min-device-pixel-ratio: 2),
+	screen and (-webkit-min-device-pixel-ratio: 2),
+	screen and (-o-min-device-pixel-ratio: 2/1),
+	screen and (min-resolution: 192dpi),
+	screen and (min-resolution: 2dppx) {
+	.box {
+		background-image: url("../../img/Img-teams@2x.jpg");
 	}
 }
 .hero {
