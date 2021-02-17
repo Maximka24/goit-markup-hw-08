@@ -172,4 +172,9 @@
 		letter-spacing: 0.03em;
 		color: $colorTextParagraph;
 	}
+	.prof440 {
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			margin-bottom: 36px;
+		}
+	}
 }
