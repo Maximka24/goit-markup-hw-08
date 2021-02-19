@@ -128,7 +128,6 @@ h2 {
 }
 
 .mobileButton {
-  margin-top: 10px;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -211,6 +210,14 @@ h2 {
   color: #2196f3;
 }
 
+@media screen and (max-width: 380px) {
+  .mobileContacts .phone {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.166;
+  }
+}
+
 .mobileContacts .mailto {
   font-weight: 500;
   font-size: 24px;
@@ -248,6 +255,12 @@ h2 {
 @media screen and (max-width: 450px) {
   .socialNetwork li:last-child {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .socialNetwork li:nth-last-child(-n + 2) {
     margin-top: 10px;
   }
 }
@@ -423,7 +436,7 @@ h2 {
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/hero/mobile/Img-teams@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/mobile/Img-teams@2x.jpg");
   }
 }
 
@@ -437,7 +450,7 @@ h2 {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/hero/tablet/Img-teams@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/tablet/Img-teams@2x.jpg");
   }
 }
 
@@ -451,7 +464,7 @@ h2 {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/hero/desktop/Img-teams@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/desktop/Img-teams@2x.jpg");
   }
 }
 
@@ -727,6 +740,13 @@ h2 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 450px) {
+  .formCheckbox .iconCheck {
+    width: 24px;
+    height: 14px;
+  }
+}
+
 .formCheckbox .textCheckbox {
   font-style: normal;
   font-weight: normal;
@@ -754,6 +774,7 @@ h2 {
 .checkbox:checked + .iconCheck {
   background-color: #2196f3;
   background-image: url(../img/check-ok.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
   border: 0;
@@ -971,6 +992,14 @@ h2 {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .worker {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .worker {
     width: calc((100% - 4 * 15px) / 2);
@@ -1151,7 +1180,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   .footerBg .containerFooter {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     text-align: start;
   }

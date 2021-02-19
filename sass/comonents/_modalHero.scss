@@ -219,6 +219,11 @@
 		transition-duration: 250ms, 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
 			cubic-bezier(0.4, 0, 0.2, 1);
+
+		@media screen and (max-width: 450px) {
+			width: 24px;
+			height: 14px;
+		}
 	}
 
 	.textCheckbox {
@@ -246,6 +251,7 @@
 .checkbox:checked + .iconCheck {
 	background-color: $focusFormColor;
 	background-image: url(../img/check-ok.svg);
+	background-repeat: no-repeat;
 	background-size: contain;
 	background-origin: border-box;
 	border: 0;
