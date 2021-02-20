@@ -154,6 +154,12 @@
 	border-bottom: 1px solid #eeeeee;
 	border-left: 1px solid #eeeeee;
 
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		&:nth-child(2) {
+			padding-right: 0px;
+		}
+	}
+
 	.activity {
 		font-weight: bold;
 		font-size: 18px;
@@ -172,9 +178,9 @@
 		letter-spacing: 0.03em;
 		color: $colorTextParagraph;
 	}
-	.prof440 {
-		@media screen and (min-width: 768px) and (max-width: 1199px) {
-			margin-bottom: 36px;
-		}
-	}
+	// .prof440 {
+	// 	@media screen and (min-width: 768px) and (max-width: 1199px) {
+	// 		margin-bottom: 36px;
+	// 	}
+	// }
 }
