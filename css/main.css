@@ -557,7 +557,7 @@ h2 {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     margin: 0 auto;
     width: 450px;
@@ -1330,6 +1330,7 @@ h2 {
   line-height: 1.142;
   letter-spacing: 0.03em;
   color: #ffffff;
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -1346,6 +1347,12 @@ h2 {
 }
 
 .footerForm .footerInput {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   padding-left: 16px;
   margin-bottom: 20px;
   background-color: #2f303a;
@@ -1364,6 +1371,12 @@ h2 {
   border: 1px solid #2196f3;
   outline: 0;
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .footerForm .footerInput {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1446,7 +1459,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 389px) and (max-width: 490px) {
+@media screen and (min-width: 389px) and (max-width: 767px) {
   .buttonList li:nth-last-child(-n + 2) {
     margin-top: 15px;
   }

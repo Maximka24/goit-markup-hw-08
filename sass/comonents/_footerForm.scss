@@ -12,6 +12,7 @@
 		line-height: 1.142;
 		letter-spacing: 0.03em;
 		color: $colorTextH2;
+		text-transform: uppercase;
 		margin: 0;
 		margin-bottom: 20px;
 	}
@@ -26,6 +27,13 @@
 	}
 
 	.footerInput {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+
 		padding-left: 16px;
 		margin-bottom: 20px;
 		background-color: $bgFooter;
@@ -45,6 +53,9 @@
 			border: 1px solid $focusFormColor;
 			outline: 0;
 			color: #ffffff;
+		}
+		@media screen and (min-width: 480px) {
+			width: 450px;
 		}
 		@media screen and (min-width: 1200px) {
 			min-width: 358px;
