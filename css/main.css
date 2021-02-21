@@ -184,6 +184,13 @@ h2 {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 480px) {
+  .formMenu {
+    height: 790px;
+    overflow: scroll;
+  }
+}
+
 .mobileNavigation .link {
   font-weight: 500;
   font-size: 40px;

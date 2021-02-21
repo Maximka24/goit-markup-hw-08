@@ -5,6 +5,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	@media screen and (min-width: 480px) {
+		height: 790px;
+		overflow: scroll;
+	}
 }
 .mobileNavigation {
 	.link {
