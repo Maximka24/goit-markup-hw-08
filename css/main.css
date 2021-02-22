@@ -89,6 +89,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -378,14 +379,9 @@ h2 {
   opacity: 1;
 }
 
-.marginContacts {
-  padding: 21px 0;
-}
-
 @media screen and (min-width: 1200px) {
   .marginContacts {
     display: flex;
-    padding: 32px 0;
   }
 }
 
@@ -421,6 +417,7 @@ h2 {
   .marginContacts a {
     font-size: 14px;
     line-height: 1.142;
+    padding: 32px 0;
   }
 }
 

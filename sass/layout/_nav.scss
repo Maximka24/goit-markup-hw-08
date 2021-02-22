@@ -86,11 +86,8 @@
 }
 
 .marginContacts {
-	padding: 21px 0;
-
 	@media screen and (min-width: 1200px) {
 		display: flex;
-		padding: 32px 0;
 	}
 
 	& li:not(:last-child) {
@@ -125,6 +122,7 @@
 		@media screen and (min-width: 1200px) {
 			font-size: 14px;
 			line-height: 1.142;
+			padding: 32px 0;
 		}
 	}
 
