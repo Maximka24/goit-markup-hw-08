@@ -3,13 +3,14 @@
 	margin-right: auto;
 	margin-left: auto;
 	border: 0px;
+	background-position: center, center;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 	background-image: linear-gradient(
 		rgba(47, 48, 58, 0.4),
 		rgba(47, 48, 58, 0.4)
 	);
-	background-size: cover;
-	background-repeat: no-repeat;
 
 	@media screen and (max-width: 767px) {
 		padding-top: 118px;
